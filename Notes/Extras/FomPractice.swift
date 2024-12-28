@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct FomPractice: View {
+    
+    @State var name : String = ""
+    @State var emailAddress : String = ""
+    @State var details : String = ""
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            Section {
+                TextField("Name", text: $name)
+                    .textContentType(.name)
+                TextField("Email", text: $emailAddress)
+                    .textContentType(.emailAddress)
+                    .textInputAutocapitalization(.never)
+            }
+            Section("Notes") {
+                TextField("Detalles", text: $details)
+                    
+            }
+        }
+        .navigationTitle("Edit Person")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
