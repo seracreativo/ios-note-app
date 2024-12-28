@@ -7,18 +7,30 @@
 
 import SwiftUI
 
+
+
+
 struct ContentView: View {
+    
+    @State var appInfo = AppInfo()
+    
+    // MARK: - Main Body
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView{
+            NListView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            NListView(forFavorite: true)
+                .tabItem {
+                    Label("Favorites", systemImage: "heart")
+                }
         }
-        .padding()
+            .environmentObject(appInfo)
     }
 }
 
+// MARK: - Preview
 #Preview {
     ContentView()
 }
