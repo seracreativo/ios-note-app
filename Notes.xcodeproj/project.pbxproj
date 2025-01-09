@@ -6,11 +6,45 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		013FEC9F2D2051B500CF5611 /* notesWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 013FEC922D2051A300CF5611 /* notesWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		013FEC9D2D2051B500CF5611 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01BC394C2D1DB4F900947053 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 013FEC912D2051A300CF5611;
+			remoteInfo = "notesWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		013FECA32D2051B500CF5611 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				013FEC9F2D2051B500CF5611 /* notesWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		013FEC922D2051A300CF5611 /* notesWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "notesWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BC39542D1DB4F900947053 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		013FEC932D2051A400CF5611 /* notesWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "notesWatch Watch App";
+			sourceTree = "<group>";
+		};
 		01BC39562D1DB4F900947053 /* Notes */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Notes;
@@ -19,6 +53,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		013FEC8F2D2051A300CF5611 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01BC39512D1DB4F900947053 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				01BC39562D1DB4F900947053 /* Notes */,
+				013FEC932D2051A400CF5611 /* notesWatch Watch App */,
 				01BC39552D1DB4F900947053 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				01BC39542D1DB4F900947053 /* Notes.app */,
+				013FEC922D2051A300CF5611 /* notesWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +91,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		013FEC912D2051A300CF5611 /* notesWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013FECA02D2051B500CF5611 /* Build configuration list for PBXNativeTarget "notesWatch Watch App" */;
+			buildPhases = (
+				013FEC8E2D2051A300CF5611 /* Sources */,
+				013FEC8F2D2051A300CF5611 /* Frameworks */,
+				013FEC902D2051A300CF5611 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				013FEC932D2051A400CF5611 /* notesWatch Watch App */,
+			);
+			name = "notesWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "notesWatch Watch App";
+			productReference = 013FEC922D2051A300CF5611 /* notesWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		01BC39532D1DB4F900947053 /* Notes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01BC39622D1DB4FB00947053 /* Build configuration list for PBXNativeTarget "Notes" */;
@@ -55,10 +120,12 @@
 				01BC39502D1DB4F900947053 /* Sources */,
 				01BC39512D1DB4F900947053 /* Frameworks */,
 				01BC39522D1DB4F900947053 /* Resources */,
+				013FECA32D2051B500CF5611 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				013FEC9E2D2051B500CF5611 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				01BC39562D1DB4F900947053 /* Notes */,
@@ -80,6 +147,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					013FEC912D2051A300CF5611 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					01BC39532D1DB4F900947053 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -100,11 +170,19 @@
 			projectRoot = "";
 			targets = (
 				01BC39532D1DB4F900947053 /* Notes */,
+				013FEC912D2051A300CF5611 /* notesWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		013FEC902D2051A300CF5611 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01BC39522D1DB4F900947053 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +193,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		013FEC8E2D2051A300CF5611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01BC39502D1DB4F900947053 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +209,75 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		013FEC9E2D2051B500CF5611 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 013FEC912D2051A300CF5611 /* notesWatch Watch App */;
+			targetProxy = 013FEC9D2D2051B500CF5611 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		013FECA12D2051B500CF5611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"notesWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = KB24G8BY9W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = notesWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.seracreativo.Notes;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seracreativo.Notes.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		013FECA22D2051B500CF5611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"notesWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = KB24G8BY9W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = notesWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.seracreativo.Notes;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seracreativo.Notes.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
 		01BC39602D1DB4FB00947053 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -307,6 +460,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		013FECA02D2051B500CF5611 /* Build configuration list for PBXNativeTarget "notesWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013FECA12D2051B500CF5611 /* Debug */,
+				013FECA22D2051B500CF5611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		01BC394F2D1DB4F900947053 /* Build configuration list for PBXProject "Notes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

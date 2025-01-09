@@ -1,36 +1,4 @@
-//
-//  NListView.swift
-//  Notes
-//
-//  Created by Frank Sera on 26/12/24.
-//
-
-import SwiftUI
-
-struct NListView: View {
-    @EnvironmentObject private var appInfo: AppInfo
-    
-    @State private var showSheet = false
-    @State private var showDetails = false
-    @State private var selectedCard: NCard?
-    
-    var forFavorite: Bool = false
-    
-    var body: some View {
-        NavigationStack {
-            List {
-                ForEach(forFavorite  ? appInfo.favorites : appInfo.cards) { card in
-                    NCardView(card: card) {
-                        appInfo
-                            .toggleFavorite(card: card)
-                    }
-                        .onTapGesture {
-                            selectedCard = card
-                            showDetails = true
-                        }
-                }
-                
-            }
+///
             .listStyle(.plain)
             .sheet(isPresented: $showSheet) {
                 NCreateNoteView { card in
